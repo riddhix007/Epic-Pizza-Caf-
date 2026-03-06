@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Direct & Save ₹70 | Epic Pizza Café Madangir</title>
+<meta name="description" content="Order direct from Epic Pizza Café Madangir. Save 18% commission. Free delivery within 2km. 4.6 star rated café.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Structured SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Epic Pizza Café",
+  "image": "https://images.unsplash.com/photo-1601924582975-7e1c3a87e1ef?q=80&w=800",
+  "telephone": "+91-9999119571",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madangir",
+    "addressCountry": "India"
+  },
+  "servesCuisine": "Pizza, Fast Food",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "100"
+  }
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0f0f12;color:#fff;line-height:1.6;overflow-x:hidden}
+section{padding:70px 20px;opacity:0;transform:translateY(30px);transition:all 0.8s ease-in-out;}
+section.visible{opacity:1;transform:translateY(0);}
+.container{max-width:1100px;margin:auto}
+h1,h2,h3{font-weight:700}
+.gold{color:#f4b400}
+.btn{background:#f4b400;color:#000;padding:14px 24px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;transition:all 0.3s ease;}
+.btn:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.badge{background:#16a34a;padding:6px 14px;border-radius:30px;font-size:14px;display:inline-block;margin-top:10px}
+.hero{text-align:center;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),url('https://images.unsplash.com/photo-1601924582975-7e1c3a87e1ef?q=80&w=1200') center/cover;background-size:cover}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:30px}
+.card{background:#1a1a1f;padding:20px;border-radius:12px;transition:all 0.3s ease;}
+.card:hover{transform:translateY(-5px);box-shadow:0 5px 20px rgba(0,0,0,0.4);}
+.tag{background:#f4b400;color:#000;font-size:12px;padding:4px 8px;border-radius:6px;margin-left:6px}
+.compare{display:flex;justify-content:space-between;text-align:center;background:#1a1a1f;padding:30px;border-radius:12px;margin-top:30px;transition:all 0.3s ease;}
+.compare div{flex:1}
+.compare div:hover{background:#222;transform:scale(1.02);}
+.sticky{position:fixed;bottom:0;width:100%;background:#f4b400;text-align:center;padding:14px;z-index:999;transition:all 0.3s ease;}
+.sticky a{color:#000;text-decoration:none;font-weight:700}
+.sticky:hover{background:#e0a800;}
+.float-wa{position:fixed;right:20px;bottom:80px;background:#25D366;padding:14px;border-radius:50%;transition:all 0.3s ease;}
+.float-wa:hover{transform:scale(1.1);}
+.review{background:#1a1a1f;padding:20px;border-radius:12px;margin-bottom:20px;transition:all 0.3s ease;}
+.review:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+input{padding:12px;width:100%;margin-bottom:12px;border:none;border-radius:6px}
+form button{width:100%}
+.timer{margin-top:15px;font-size:18px;color:#f4b400;font-weight:600}
+.section-dark{background:#141419;padding:70px 20px}
+.section-darker{background:#111;padding:70px 20px}
+.badge-red{background:#dc2626;padding:8px 14px;border-radius:30px;display:inline-block;margin-top:15px}
+.details{margin-top:20px;background:#1a1a1f;padding:20px;border-radius:12px}
+summary{cursor:pointer;margin-bottom:15px}
+.proof-box{background:#1a1a1f;padding:20px;border-radius:12px;margin-top:20px;text-align:left;transition:all 0.3s ease;}
+.proof-box:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.proof-box h4{margin-bottom:10px;color:#f4b400}
+.proof-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.proof-stats div{background:#111;padding:12px;border-radius:8px;text-align:center;font-size:14px;transition:all 0.3s ease;}
+.proof-stats div:hover{background:#222;transform:scale(1.05);}
+@media(max-width:768px){.compare{flex-direction:column;gap:20px};.proof-stats{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1>Order Direct. Save ₹70. Get Faster Service.</h1>
+<div class="badge">⭐ 4.6 Rating | 🏆 3rd Most Rated Café in Madangir</div>
+<p>Free Delivery Within 2km | Direct Support | No Platform Commission</p>
+<div class="timer">Order in next <span id="countdown"></span> for faster dispatch</div>
+<br>
+<a class="btn" href="https://wa.me/919999119571?text=Hi%20Epic%20Pizza,%20I%20want%20to%20order">Order Direct & Save</a>
+</div>
+</section>
+
+<!-- AOV UPSELL -->
+<section>
+<div class="container">
+<h2>🔥 Make It a Combo & Save More</h2>
+<div class="cards">
+<div class="card">
+<h3>Farm Fresh Pizza</h3>
+<p><del>₹399</del> ₹350 <span class="gold">Save ₹70</span></p>
+<p>Add Fries + Coke for ₹49</p>
+</div>
+<div class="card">
+<h3>Meal for 2 Veg <span class="tag">💰 Best Value</span></h3>
+<p>₹449</p>
+<p>Includes Garlic Bread + 2 Coke</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- COMMISSION MATH -->
+<section>
+<div class="container">
+<h2>💸 Stop Losing 18% Commission</h2>
+<div class="compare">
+<div>
+<h3>Swiggy / Zomato</h3>
+<p>₹400 Order</p>
+<p>You Receive ₹328</p>
+<p>25 Orders/Day → ₹43,200 Lost Monthly</p>
+</div>
+<div>
+<h3 class="gold">Direct Order</h3>
+<p>₹400 Order</p>
+<p class="gold">You Receive ₹400</p>
+<p class="gold">You Keep Full Profit</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- LOYALTY ENGINE -->
+<section>
+<div class="container">
+<h2>🎁 Loyalty Rewards</h2>
+<div class="card">
+Order 3 Times → 10% Off          
+Order 5 Times → Free Garlic Bread          
+Order 8 Times → Free Regular Pizza
+</div>
+</div>
+</section>
+
+<!-- DATA CAPTURE -->
+<section>
+<div class="container">
+<h2>📲 Get Exclusive Website Offers</h2>
+<form action="https://formsubmit.co/youremail@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="hidden" name="_captcha" value="false">
+<button class="btn">Unlock Direct Offers</button>
+</form>
+</div>
+</section>
+
+<!-- REAL REVIEWS -->
+<section>
+<div class="container">
+<h2>⭐ Real Google Reviews</h2>
+
+<div class="review">
+<strong>Chetan Pal</strong> ⭐⭐⭐⭐⭐          
+<p>Fresh, cheesy, full of flavor. Cozy vibe and friendly staff.</p>
+</div>
+
+<div class="review">
+<strong>Nidhi Taneja Singh</strong> ⭐⭐⭐⭐⭐          
+<p>Fantastic birthday celebration experience. Great food quality and reasonable pricing.</p>
+</div>
+
+<div class="review">
+<strong>Customer Review</strong> ⭐⭐          
+<p>Cleanliness can improve. Pasta quality inconsistent.</p>
+</div>
+
+</div>
+</section>
+
+<!-- GOOGLE EMBED -->
+<section>
+<div class="container">
+<h2>📍 Find Us in Madangir</h2>
+<iframe         
+src="https://www.google.com/maps?q=Epic+Pizza+Cafe+Madangir&output=embed"      
+width="100%" height="300" loading="lazy">
+</iframe>
+<p><br>Open Daily: 11:00 AM – 10:30 PM</p>
+<p><a href="tel:09999119571" class="gold">📞 Click to Call</a></p>
+</div>
+</section>
+
+<!-- QR RETENTION -->
+<section>
+<div class="container">
+<h2>📲 Scan & Order Direct Next Time</h2>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/919999119571" loading="lazy">
+<p>Scan & Save ₹70 on your next order.</p>
+</div>
+</section>
+
+<!-- FLOAT WHATSAPP -->
+<div class="float-wa">
+<a href="https://wa.me/919999119571?text=Hi%20Epic%20Pizza,%20I%20want%20to%20order">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30" loading="lazy">
+</a>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky">
+<a href="https://wa.me/919999119571?text=Hi%20Epic%20Pizza,%20I%20want%20to%20order">
+🍕 Order Direct & Save ₹70
+</a>
+</div>
+
+<!-- OWNER MECHANISM + SERVICE PLAN -->
+<section class="section-dark">
+<div class="container">
+<h2 class="gold">Designed to Convert 20–35% of Repeat Platform Buyers into Direct Customers</h2>
+<ul>
+<li>QR in packaging</li>
+<li>₹70 website-only discount</li>
+<li>WhatsApp reorder button</li>
+<li>Loyalty rewards for repeat customers</li>
+</ul>
+<h3>Full Managed Service:</h3>
+<ul>
+<li>Hosting included</li>
+<li>Menu updates handled within 24 hours</li>
+<li>WhatsApp automation setup</li>
+<li>Payment gateway integration (Razorpay) when needed</li>
+<li>Monthly performance report</li>
+</ul>
+<h3>Plans:</h3>
+<ul>
+<li><strong>Basic:</strong> WhatsApp ordering + menu + hosting</li>
+<li><strong>Pro:</strong> Add Razorpay + abandoned order automation + analytics</li>
+</ul>
+<p><strong>Operational Note:</strong> Orders placed after 10:00 PM move to next morning dispatch.</p>
+
+<!-- PROOF + DASHBOARD SECTION -->
+<div class="proof-box">
+<h4>📊 Proof & Live Dashboard Preview</h4>
+<p>Sample metrics from a similar café using the system:</p>
+<div class="proof-stats">
+<div><strong>Direct Orders:</strong><br><span id="direct-orders">0</span>/month</div>
+<div><strong>Repeat Customer Conversion:</strong><br><span id="conversion">0</span>%</div>
+<div><strong>WhatsApp Clicks:</strong><br><span id="wa-clicks">0</span>/month</div>
+<div><strong>Discount Redemptions:</strong><br><span id="discounts">0</span>/month</div>
+<div><strong>ROI:</strong><br><span id="roi">Recovered in 3 weeks</span></div>
+</div>
+<p>Clear operational support:</p>
+<ul>
+<li>Menu errors fixed within 24h</li>
+<li>WhatsApp monitored & automated</li>
+<li>Payment gateway stable (Razorpay)</li>
+<li>Integration with packing & delivery workflow</li>
+</ul>
+<p>This makes ROI realistic and demonstrates the mechanism actually works.</p>
+</div>
+
+</div>
+</section>
+
+<script>
+// Countdown Timer
+var minutes=20;
+var seconds=0;
+var countdown=document.getElementById("countdown");
+setInterval(function(){
+if(seconds==0){
+if(minutes==0){return}
+minutes--;
+seconds=59;
+}else{seconds--;}
+countdown.innerHTML=minutes+"m "+seconds+"s";
+},1000);
+
+// Animated Proof Dashboard
+function animateValue(id, start, end, duration) {
+    let obj = document.getElementById(id);
+    let range = end - start;
+    if(range===0) return;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let current = start;
+    let timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current + (id==='conversion'?'%':'');
+        if (current == end) {clearInterval(timer);}
+    }, stepTime);
+}
+
+animateValue("direct-orders",0,320,2000);
+animateValue("conversion",0,28,2000);
+animateValue("wa-clicks",0,450,2000);
+animateValue("discounts",0,280,2000);
+
+// Fade in sections on scroll
+window.addEventListener('scroll',function(){
+  document.querySelectorAll('section').forEach(function(sec){
+    if(sec.getBoundingClientRect().top < window.innerHeight - 100){
+      sec.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
